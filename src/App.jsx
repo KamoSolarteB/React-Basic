@@ -3,10 +3,12 @@ import React from "react";
 // import { UserCard } from "./components";
 // import { Input } from "./components";
 // import { Posts } from "./components";
+import { Counter } from "./components";
 
 function App() {
   return (
     <>
+      <Counter />
     </>
   );
 }
