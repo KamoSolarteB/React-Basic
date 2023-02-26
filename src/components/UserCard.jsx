@@ -1,13 +1,12 @@
 import React from 'react'
 
-function UserCard({ name, amount, programming, address }) {
+function UserCard({ready, number}) {
   return (
-    <div>
-      <h1 className='text-emerald-400'>{name}</h1>
-      <p>${amount}</p>
-      <p className='text-green-500'>{programming ? 'Programming' : 'Resting'}</p>
-      <p>-{address.street}</p>
-      <p>-{address.city}</p>
+    <div className='rounded-sm bg-slate-700 m-20 p-4'>
+      <h1 className='font-bold'>Mi {number} tarea</h1>
+      <span className={ready ? 'bg-green-400' : 'bg-red-500' }>
+          {ready ? 'Tarea Realizada' : 'Tarea por hacer'}
+        </span>
     </div>
   )
 }
